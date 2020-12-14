@@ -26,6 +26,6 @@ zs = [inv(y, n) for y, n in zip(ys, ns)]
 x = sum(a * y * z for a, y, z in zip(a_s, ys, zs))
 
 while x >= N or x < 0:
-    x += (N if x < 0 else -N)
+    x += N if x < 0 else -N
 
 print(x)
